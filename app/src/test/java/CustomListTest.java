@@ -30,7 +30,7 @@ public class CustomListTest {
 
         City city = new City("Toronto", "Ontario");
         City city2 = new City("Montreal", "Quebec");
-        list.add(city);
+        list.addCity(city);
 
         assertTrue(list.hasCity(city));
         assertFalse(list.hasCity(city2));

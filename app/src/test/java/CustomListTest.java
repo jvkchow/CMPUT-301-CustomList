@@ -54,4 +54,10 @@ public class CustomListTest {
         });
     }
 
+    @Test
+    public void countCitiesTest() {
+        list.addCity(new City("Lethbridge", "Alberta"));
+        assertEquals(1, list.countCities());
+    }
+
 }

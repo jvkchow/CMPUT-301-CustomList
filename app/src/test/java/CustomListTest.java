@@ -29,9 +29,11 @@ public class CustomListTest {
     public void hasCityTest() {
 
         City city = new City("Toronto", "Ontario");
+        City city2 = new City("Montreal", "Quebec");
         list.add(city);
 
         assertTrue(list.hasCity(city));
+        assertFalse(list.hasCity(city2));
     }
 
 }
